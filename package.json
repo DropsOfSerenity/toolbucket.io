@@ -1,7 +1,7 @@
 {
   "name": "toolbucket.io",
   "version": "1.0.0",
-  "description": "toolbox.io",
+  "description": "toolbucket.io",
   "main": "index.js",
   "scripts": {
     "start": "./node_modules/nodemon/bin/nodemon.js server",
@@ -12,24 +12,29 @@
     "type": "git",
     "url": "https://github.com/DropsOfSerenity/toolbucket.io"
   },
-  "author": "Justin Schiff &lt;AmbientRevolution@gmail.com&gt; <AmbientRevolution@gmail.com>",
+  "author": "Justin Schiff <AmbientRevolution@gmail.com>",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/DropsOfSerenity/toolbucket.io/issues"
   },
   "homepage": "https://github.com/DropsOfSerenity/toolbucket.io",
   "dependencies": {
+    "boom": "^2.9.0",
     "confidence": "^1.x.x",
     "glue": "^2.x.x",
     "hapi": "^9.x.x",
     "hoek": "^2.x.x",
     "jade": "^1.x.x",
+    "joi": "^6.7.1",
+    "request": "^2.64.0",
     "vision": "^3.x.x",
-    "visionary": "^3.x.x"
+    "visionary": "^3.x.x",
+    "xml2js": "^0.4.12"
   },
   "devDependencies": {
     "code": "^1.x.x",
     "lab": "^5.x.x",
-    "nodemon": "^1.x.x"
+    "nodemon": "^1.x.x",
+    "sinon": "^1.17.1"
   }
 }
