@@ -64,7 +64,7 @@ lab.experiment('Index Plugin', function () {
         server.inject(validRequest, function (response) {
 
             Code.expect(response.statusCode).to.equal(200);
-            Code.expect(response.result.address).to.not.be.empty;
+            Code.expect(response.result.address).to.be.an.object();
 
             done();
         });
@@ -88,7 +88,7 @@ lab.experiment('Index Plugin', function () {
         server.inject(validRequest, function (response) {
 
             Code.expect(response.statusCode).to.equal(200);
-            Code.expect(response.result.message).to.exist;
+            Code.expect(response.result.message).to.be.a.string();
             done();
         });
     });
@@ -107,4 +107,5 @@ lab.experiment('Index Plugin', function () {
             done();
         });
     });
+
 });
