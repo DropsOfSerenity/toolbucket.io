@@ -1,4 +1,3 @@
-var Hoek = require('hoek');
 var Joi = require('joi');
 var Boom = require('boom');
 var xml2js = require('xml2js');
